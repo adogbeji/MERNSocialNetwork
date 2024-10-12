@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Nav = () => {
     return (
         <header>
@@ -16,9 +18,21 @@ const Nav = () => {
                 {/* <!-- Links --> */}
                 <div className="topnav__link-dot-dropdown-box">
                     <div className="topnav__link-box">
-                        <a href="#" className="topnav__link topnav__link--1">Booking</a>
-                        <a href="#" className="topnav__link topnav__link--2">Account</a>
-                        <a href="#" className="topnav__link topnav__link--3">Settings</a>
+                        <Link href="/" className="topnav__link topnav__link--1">
+                            <a>Home</a>
+                        </Link>
+
+                        <Link href="#" className="topnav__link topnav__link--2">
+                            <a>Login</a>
+                        </Link>
+
+                        <Link href="#" className="topnav__link topnav__link--3">
+                            <a>Register</a>
+                        </Link>
+
+                        {/* <a href="#" className="topnav__link topnav__link--1">Booking</a> */}
+                        {/* <a href="#" className="topnav__link topnav__link--2">Account</a> */}
+                        {/* <a href="#" className="topnav__link topnav__link--3">Settings</a> */}
                         <a href="#" className="topnav__link topnav__link--4">Orders</a>
                     </div>
                     
