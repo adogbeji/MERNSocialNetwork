@@ -18,7 +18,7 @@ const Nav = () => {
                 {/* <!-- Links --> */}
                 <div className="topnav__link-dot-dropdown-box">
                     <div className="topnav__link-box">
-                        <Link href="/" className="topnav__link topnav__link--1">
+                        {/* <Link href="/" className="topnav__link topnav__link--1">
                             <a>Home</a>
                         </Link>
 
@@ -28,12 +28,16 @@ const Nav = () => {
 
                         <Link href="#" className="topnav__link topnav__link--3">
                             <a>Register</a>
-                        </Link>
+                        </Link> */}
+
+                        <Link href="#" className="topnav__link topnav__link--1">Home</Link>
+                        <Link href="#" className="topnav__link topnav__link--2">Account</Link>
+                        <Link href="#" className="topnav__link topnav__link--3">Settings</Link>
 
                         {/* <a href="#" className="topnav__link topnav__link--1">Booking</a> */}
                         {/* <a href="#" className="topnav__link topnav__link--2">Account</a> */}
                         {/* <a href="#" className="topnav__link topnav__link--3">Settings</a> */}
-                        <a href="#" className="topnav__link topnav__link--4">Orders</a>
+                        {/* <a href="#" className="topnav__link topnav__link--4">Orders</a> */}
                     </div>
                     
                     {/* <!-- Responsive Dot Icon Dropdown (#2) --> */}
