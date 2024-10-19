@@ -1,6 +1,8 @@
 import Nav from '../components/Nav';
 import Head from 'next/head'
 
+import '../styles/styles.scss';  // Imports global SASS styles
+
 export default function MyApp({ Component, pageProps }) {
   // return <Component {...pageProps} />
   return (

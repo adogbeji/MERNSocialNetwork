@@ -1,11 +1,13 @@
 import Link from 'next/link';
 
+import styles from './Nav.module.scss';
+
 const Nav = () => {
     return (
         <header>
 
         {/* <!-- Navbar Start --> */}
-        <nav className="topnav">
+        <nav className={styles.topnav}>
             {/* <!-- Logo --> */}
             <Link href="#" className="topnav__logo-link">
                 {/* <img src="images/logo.png" alt="Website Logo" className="topnav__logo"> */}
