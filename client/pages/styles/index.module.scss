@@ -1,5 +1,25 @@
 // Page styles can either be put in the 'styles' or 'pages' folder
 
-.text {
-    color: #FF0000;
+._0046 > * {
+    font-size: 2.6rem;
+}
+
+._0046_sect_1 {
+    background-color: #00FFFF;
+    grid-column: full-start / full-end;
+}
+
+._0046_sect_2 {
+    background-color: #808080;
+    grid-column: full-start / full-end;
+}
+
+._0046_sect_3 {
+    background-color: #F1425D;
+    grid-column: full-start / full-end;
+}
+
+._0046_sect_4 {
+    background-color: #333333;
+    grid-column: full-start / full-end;
 }
