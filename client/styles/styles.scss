@@ -24,7 +24,7 @@ body {
 
 
     // NOTE: Temporary home page grid definition
-    display: grid;
-    grid-template-rows: min-content 25vw auto min-content;
-    grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+    // display: grid;
+    // grid-template-rows: min-content 25vw auto min-content;
+    // grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
 }

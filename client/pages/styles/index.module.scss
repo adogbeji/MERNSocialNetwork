@@ -1,7 +1,14 @@
 // Page styles can either be put in the 'styles' or 'pages' folder
 
+._0046 {
+    display: grid;
+    grid-template-rows: min-content 25vw auto min-content;
+    grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+}
+
 ._0046 > * {
     font-size: 2.6rem;
+    padding: .5rem;
 }
 
 ._0046_sect_1 {
