@@ -1,32 +1,34 @@
 // Define all global styles here & import into custom App component (MyApp)
 
-@import 'components/_register-form.scss';
+@import 'base/base';
+@import 'base/typography';
+@import 'components/register-form';
 
-*,
-*::before,
-*::after {  /* CSS Reset */
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {  /* CSS Reset */
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+// }
 
-html {
-    min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
-    font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
-}
+// html {
+//     min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
+//     font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
+// }
 
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    min-height: 100vh;  /* Enusres page body is at least as high as browser viewport */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: #000000;
-    box-sizing: border-box;  /* Border & Padding included in Width & Height */
+// body {
+//     max-width: 100%;
+//     overflow-x: hidden;
+//     min-height: 100vh;  /* Enusres page body is at least as high as browser viewport */
+//     font-family: 'Poppins', sans-serif;
+//     font-weight: 300;
+//     color: #000000;
+//     box-sizing: border-box;  /* Border & Padding included in Width & Height */
 
 
-    // NOTE: Temporary home page grid definition
-    // display: grid;
-    // grid-template-rows: min-content 25vw auto min-content;
-    // grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
-}
+//     // NOTE: Temporary home page grid definition
+//     // display: grid;
+//     // grid-template-rows: min-content 25vw auto min-content;
+//     // grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+// }
