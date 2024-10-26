@@ -3,9 +3,53 @@ import styles from './styles/register.module.scss';
 const Register = () => {
   return (
     <div className={styles._0053}>
-      <section className={styles._0053_sect_1}>SECTION 1</section>
-      <section className={styles._0053_sect_2}>SECTION 2</section>
+      <div className={styles._0053_content}>
+      <section className={styles._0053_sect_1}>
+        <div className={styles._0053_sect_1_text_box_1}>
+          <h3 className={styles._0053_sect_1_text}>Register</h3>
+        </div>
+      </section>
+      <section className={styles._0053_sect_2}>
+        <div className={styles._0053_sect_2_form_box}>
+        {/* <!-- Form Start --> */}
+                <form className="form">
+                    <div className="form__group">
+                        <label for="name">Name</label>
+                        <input type="text" className="form__control" id="name" name="name" autocomplete="off" placeholder="Enter Name"/>
+                    </div>
+
+                    <div className="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" className="form__control" id="email" name="email" autocomplete="off" placeholder="Enter Email"/>
+                    </div>
+
+                    <div className="form__group">
+                        <label for="password_1">Password</label>
+                        <input type="password" className="form__control" id="password_1" name="password_1" placeholder="Enter Password"/>
+                    </div>
+
+                    <div className="form__group form__mb-0">
+                        <label for="password_2">Confirm Password</label>
+                        <input type="password" className="form__control" id="password_2" name="password_2" placeholder="Confirm Password"/>
+                    </div>
+
+                    <div className="form__login-prompt-box">
+                        <p className="form__login-prompt">Already have an account? 
+                            <a href="#" className="form__login-link">Sign In</a>
+                        </p>
+                    </div>
+
+                    {/* <!-- Button Start --> */}
+                    <button type="submit" className="form__btn form__btn--block form__btn--lg form__btn--dark form__btn--rounded">
+                        Register
+                    </button>
+                    {/* <!-- Button End --> */}
+                </form>
+                {/* <!-- Form End --> */}
+        </div>
+      </section>
       <section className={styles._0053_sect_3}>SECTION 3</section>
+      </div>
     </div>
   );
 };

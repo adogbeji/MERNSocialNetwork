@@ -8,10 +8,12 @@ const Home = () => {
     // </div>
 
     <div className={styles._0046}>
-      <section className={styles._0046_sect_1}>SECTION 1</section>
-      <section className={styles._0046_sect_2}>SECTION 2</section>
-      <section className={styles._0046_sect_3}>SECTION 3</section>
-      <section className={styles._0046_sect_4}>SECTION 4</section>
+      <div className={styles._0046_content}>
+        <section className={styles._0046_sect_1}>SECTION 1</section>
+        <section className={styles._0046_sect_2}>SECTION 2</section>
+        <section className={styles._0046_sect_3}>SECTION 3</section>
+        <section className={styles._0046_sect_4}>SECTION 4</section>
+      </div>
     </div>
   );
 };
