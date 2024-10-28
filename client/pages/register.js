@@ -28,9 +28,26 @@ const Register = () => {
                         <input type="password" className="form__control" id="password_1" name="password_1" placeholder="Enter Password"/>
                     </div>
 
-                    <div className="form__group form__mb-0">
+                    {/* <div className="form__group form__mb-0">
                         <label for="password_2">Confirm Password</label>
                         <input type="password" className="form__control" id="password_2" name="password_2" placeholder="Confirm Password"/>
+                    </div> */}
+
+                        <div className="form__group form__group--select-box">
+                        <label for="signUpQuestion">Pick a question</label>
+                        <select className="form__control form__control--select-box" id="signUpQuestion" name="question" aria-describedby="form__small-text">
+                            <option value="favouriteColour">What is your favourite colour?</option>
+                            <option value="bestFriendName">What is your best friend's name?</option>
+                            <option value="cityOfBirth">What city were you born in?</option>
+                        </select>
+
+                        {/* <div className="form__select-box-icon-box">
+                            <svg className="form__select-box-icon">
+                                <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+                            </svg>
+                        </div> */}
+
+                        <small className="form__small-text">You can use this to reset yuor password if forgotten</small>
                     </div>
 
                     <div className="form__login-prompt-box">
