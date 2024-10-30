@@ -1,16 +1,16 @@
-import styles from './styles/register.module.scss';
+// import styles from './styles/register.module.scss';
 
 const Register = () => {
   return (
-    <div className={styles._0053}>
-      <div className={styles._0053_content}>
-      <section className={styles._0053_sect_1}>
-        <div className={styles._0053_sect_1_text_box_1}>
-          <h3 className={styles._0053_sect_1_text}>Register</h3>
+    <div className="_0053">
+      <div className="_0053-content">
+      <section className="_0053-sect_1">
+        <div className="_0053-sect_1-text-box-1">
+          <h3 className="_0053-sect_1-text">Register</h3>
         </div>
       </section>
-      <section className={styles._0053_sect_2}>
-        <div className={styles._0053_sect_2_form_box}>
+      <section className="_0053-sect_2">
+        <div className="_0053-sect_2-form-box">
         {/* <!-- Form Start --> */}
                 <form className="form">
                     <div className="form__group">
@@ -68,7 +68,7 @@ const Register = () => {
       {/* <section className={styles._0053_sect_3}>SECTION 3</section> */}
 
       {/* <!-- Footer Start --> */}
-    <footer className="footer">
+    <footer className="footer _0053-sect_3">
         <div className="footer__box">
             <div className="footer__link-box">
                 <a href="#" className="footer__link">Link 1</a>

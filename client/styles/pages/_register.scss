@@ -1,0 +1,78 @@
+// Styles for register page below
+
+._0053 {
+    // display: grid;
+    // grid-template-rows: min-content auto min-content;
+    // grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+    
+    // Makes wrapper div cover entire page body (required)
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    &-content {
+        display: grid;
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+    
+        // & > * {  // Testing
+        //     font-size: 2.6rem;
+        //     padding: .5rem;
+        // }
+
+        // background-color: #FF0000;  // Testing
+        width: 100%;  // Next two lines give it the same dimensions as parent (required)
+        height: 100%;
+
+        overflow-y: scroll;  // Shows y-axis scroll bar
+        // overflow-x: hidden;  // Hides x-axis scroll bar
+    }
+}
+
+// ._0053 > * {
+//     font-size: 2.6rem;
+//     padding: .5rem;
+// }
+
+._0053-sect_1 {
+    // background-color: #00FFFF;
+    background-color: #808080;
+    grid-column: full-start / full-end;
+
+    &-text-box-1 {
+        // background-color: #FF0000;  // Testing
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.2rem 0;
+    }
+
+    &-text {
+        font-size: 4.2rem;
+        color: #FFFFFF;
+    }
+}
+
+._0053-sect_2 {
+    // background-color: #808080;
+    background-color: #FFFFFF;
+    grid-column: full-start / full-end;
+    padding: 14rem 0;
+
+    &-form-box {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        width: 60%;  // Controls size of form
+        margin: auto;
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+}
+
+._0053-sect_3 {
+    background-color: #333333;
+    grid-column: full-start / full-end;
+}
