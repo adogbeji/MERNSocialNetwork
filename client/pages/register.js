@@ -43,11 +43,11 @@ const Register = () => {
 
                         {/* <div className="form__select-box-icon-box">
                             <svg className="form__select-box-icon">
-                                <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+                                <use xlink:href="/images/sprite.svg#icon-keyboard_arrow_down"></use>
                             </svg>
                         </div> */}
 
-                        <small className="form__small-text">You can use this to reset yuor password if forgotten</small>
+                        <small className="form__small-text">You can use this to reset your password if forgotten</small>
                     </div>
 
                     <div className="form__login-prompt-box">
@@ -65,7 +65,23 @@ const Register = () => {
                 {/* <!-- Form End --> */}
         </div>
       </section>
-      <section className={styles._0053_sect_3}>SECTION 3</section>
+      {/* <section className={styles._0053_sect_3}>SECTION 3</section> */}
+
+      {/* <!-- Footer Start --> */}
+    <footer className="footer">
+        <div className="footer__box">
+            <div className="footer__link-box">
+                <a href="#" className="footer__link">Link 1</a>
+                <a href="#" className="footer__link">Link 2</a>
+                <a href="#" className="footer__link">Link 3</a>
+                <a href="#" className="footer__link">Link 4</a>
+                <a href="#" className="footer__link">Link 5</a>
+                <a href="#" className="footer__link">Link 6</a>
+            </div>
+        </div>
+    </footer>
+      {/* <!-- Footer Start --> */}
+    
       </div>
     </div>
   );
