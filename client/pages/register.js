@@ -1,6 +1,12 @@
 // import styles from './styles/register.module.scss';
+import { useState } from 'react';
 
 const Register = () => {
+    const [name, setName] = useState('');  // Stores Name
+    const [email, setEmail] = useState('');  // Stores Email
+    const [password, setPassword] = useState('');  // Stores Password
+    const [secret, setSecret] = useState('');  // Stores Answer To Question
+
   return (
     <div className="_0053">
       <div className="_0053-content">
