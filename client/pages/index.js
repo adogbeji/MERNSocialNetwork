@@ -1,4 +1,4 @@
-import styles from './styles/index.module.scss';
+// import styles from './styles/index.module.scss';
 
 const Home = () => {
   return (
@@ -7,12 +7,12 @@ const Home = () => {
     //   <img src="/images/gal-1.jpeg" alt="Dummy Image"/>
     // </div>
 
-    <div className={styles._0046}>
-      <div className={styles._0046_content}>
-        <section className={styles._0046_sect_1}>SECTION 1</section>
-        <section className={styles._0046_sect_2}>SECTION 2</section>
-        <section className={styles._0046_sect_3}>SECTION 3</section>
-        <section className={styles._0046_sect_4}>SECTION 4</section>
+    <div className="_0046">
+      <div className="_0046-content">
+        <section className="_0046-sect_1">SECTION 1</section>
+        <section className="_0046-sect_2">SECTION 2</section>
+        <section className="_0046-sect_3">SECTION 3</section>
+        <section className="_0046-sect_4">SECTION 4</section>
       </div>
     </div>
   );

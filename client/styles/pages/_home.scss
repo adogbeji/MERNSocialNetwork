@@ -1,0 +1,58 @@
+// Styles for home page below
+
+._0046 {
+    // display: grid;
+    // grid-template-rows: min-content 25vw auto min-content;
+    // grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+
+    // Makes wrapper div cover entire page body (required)
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    &-content {
+        display: grid;
+        grid-template-rows: min-content 25vw auto min-content;
+        grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
+    
+        & > * {  // Testing
+            font-size: 2.6rem;
+            padding: .5rem;
+        }
+
+        // background-color: #FF0000;  // Testing
+        width: 100%;  // Next two lines give it the same dimensions as parent (required)
+        height: 100%;
+
+        overflow-y: scroll;  // Shows y-axis scroll bar
+        // overflow-x: hidden;  // Hides x-axis scroll bar
+    }
+}
+
+// ._0046 > * {
+//     font-size: 2.6rem;
+//     padding: .5rem;
+// }
+
+._0046-sect_1 {
+    background-color: #00FFFF;
+    grid-column: full-start / full-end;
+}
+
+._0046-sect_2 {
+    background-color: #808080;
+    grid-column: full-start / full-end;
+}
+
+._0046-sect_3 {
+    background-color: #F1425D;
+    grid-column: full-start / full-end;
+}
+
+._0046-sect_4 {
+    background-color: #333333;
+    grid-column: full-start / full-end;
+}
