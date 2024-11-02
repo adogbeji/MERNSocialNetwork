@@ -21,7 +21,7 @@ const Register = () => {
                 <form className="form">
                     <div className="form__group">
                         <label for="name">Name</label>
-                        <input type="text" className="form__control" id="name" name="name" autocomplete="off" placeholder="Enter Name"/>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" className="form__control" id="name" name="name" autocomplete="off" placeholder="Enter Name"/>
                     </div>
 
                     <div className="form__group">
