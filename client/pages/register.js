@@ -26,12 +26,12 @@ const Register = () => {
 
                     <div className="form__group">
                         <label for="email">Email</label>
-                        <input type="email" className="form__control" id="email" name="email" autocomplete="off" placeholder="Enter Email"/>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form__control" id="email" name="email" autocomplete="off" placeholder="Enter Email"/>
                     </div>
 
                     <div className="form__group">
                         <label for="password_1">Password</label>
-                        <input type="password" className="form__control" id="password_1" name="password_1" placeholder="Enter Password"/>
+                        <input value={password} onChange={e => setPassword(e.target.value)} type="password" className="form__control" id="password_1" name="password_1" placeholder="Enter Password"/>
                     </div>
 
                     {/* <div className="form__group form__mb-0">
@@ -39,9 +39,9 @@ const Register = () => {
                         <input type="password" className="form__control" id="password_2" name="password_2" placeholder="Confirm Password"/>
                     </div> */}
 
-                        <div className="form__group form__group--select-box">
+                    <div className="form__group form__group--select-box">
                         <label for="signUpQuestion">Pick a question</label>
-                        <select className="form__control form__control--select-box" id="signUpQuestion" name="question" aria-describedby="form__small-text">
+                        <select className="form__control form__control--select-box" id="signUpQuestion" name="signUpQuestion" aria-describedby="form__small-text">
                             <option value="favouriteColour">What is your favourite colour?</option>
                             <option value="bestFriendName">What is your best friend's name?</option>
                             <option value="cityOfBirth">What city were you born in?</option>
@@ -54,6 +54,11 @@ const Register = () => {
                         </div> */}
 
                         <small className="form__small-text">You can use this to reset your password if forgotten</small>
+                    </div>
+
+                    <div className="form__group">
+                        <label for="signUpQuestionAnswer">Answer here</label>
+                        <input value={secret} onChange={e => setSecret(e.target.value)} type="text" className="form__control" id="signUpQuestionAnswer" name="signUpQuestionAnswer" autocomplete="off" placeholder="Write your answer here"/>
                     </div>
 
                     <div className="form__login-prompt-box">
