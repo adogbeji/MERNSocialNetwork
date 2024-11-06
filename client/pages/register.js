@@ -7,6 +7,12 @@ const Register = () => {
     const [password, setPassword] = useState('');  // Stores Password
     const [secret, setSecret] = useState('');  // Stores Answer To Question
 
+    // Prevents default browser ehaviour & submits user data to backend
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(name, email, password, secret);
+    };
+
   return (
     <div className="_0053">
       <div className="_0053-content">
@@ -18,7 +24,7 @@ const Register = () => {
       <section className="_0053-sect_2">
         <div className="_0053-sect_2-form-box">
         {/* <!-- Form Start --> */}
-                <form className="form">
+                <form onSubmit={handleSubmit} className="form">
                     <div className="form__group">
                         <label for="name">Name</label>
                         <input value={name} onChange={e => setName(e.target.value)} type="text" className="form__control" id="name" name="name" autocomplete="off" placeholder="Enter Name"/>
