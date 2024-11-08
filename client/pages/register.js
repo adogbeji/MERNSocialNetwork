@@ -1,5 +1,6 @@
 // import styles from './styles/register.module.scss';
 import { useState } from 'react';
+import axios from 'axios';
 
 const Register = () => {
     const [name, setName] = useState('');  // Stores Name
@@ -10,7 +11,8 @@ const Register = () => {
     // Prevents default browser ehaviour & submits user data to backend
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(name, email, password, secret);
+        // console.log(name, email, password, secret);
+        axios.post('http://localhost:3000/api/register');
     };
 
   return (
