@@ -14,7 +14,9 @@ const Register = () => {
         // console.log(name, email, password, secret);
         axios.post('http://localhost:3000/api/register', {
             name, email, password, secret
-        });
+        })
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
     };
 
   return (
