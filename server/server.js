@@ -9,3 +9,11 @@ const morgan = require('morgan');
 require('dotenv').config();
 
 const app = express();
+
+// DB Connection
+mongoose.connect(process.env.DATABASE_URL, {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreatIndex: true,
+});
