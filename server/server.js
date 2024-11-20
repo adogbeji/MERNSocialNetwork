@@ -21,4 +21,4 @@ mongoose.connect(process.env.DATABASE_URL, {
 .catch(err => console.log('DB Connection Error => ', err));
 
 // Middlewares
-app.use(express.json());
+app.use(express.json({limit: '5mb'}));
