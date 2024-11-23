@@ -27,4 +27,7 @@ app.use(cors({
     origin: ['http://localhost:3000'],
 }));
 
-app.post('/api/register', (req, res) => {});
+app.post('/api/register', (req, res) => {
+    console.log('REGISTER ENDPOINT => ', req.body);
+    
+});
