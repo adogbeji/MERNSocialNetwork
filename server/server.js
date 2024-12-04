@@ -34,6 +34,9 @@ app.post('/api/register', (req, res) => {
     console.log('REGISTER ENDPOINT => ', req.body);
 });
 
+// Autoload routes
+readdirSync('./routes');
+
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => console.log(`Server running on port ${port}...`));
