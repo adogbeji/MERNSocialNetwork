@@ -23,4 +23,9 @@ const userSchema = new Schema({
         min: 6,
         max: 64,
     },
+    secret: {
+        type: String,
+        required: true,
+    },
+    about: {},
 });
