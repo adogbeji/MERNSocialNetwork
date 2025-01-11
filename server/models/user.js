@@ -28,4 +28,5 @@ const userSchema = new Schema({
         required: true,
     },
     about: {},
+    photo: String,
 });
