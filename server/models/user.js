@@ -29,4 +29,5 @@ const userSchema = new Schema({
     },
     about: {},
     photo: String,
+    following: [{type: Schema.ObjectId}],
 });
