@@ -15,3 +15,5 @@ export const hashPassword = (password) => {
         });
     });
 };
+
+export const comparePassword = (password, hash) => {};
