@@ -1,3 +1,6 @@
+// import User from '../models/user';
+const User = require('../models/user');
+
 // export const register = (req, res) => {
 //     console.log('REGISTER ENDPOINT => ', req.body);
 // };
@@ -14,4 +17,5 @@ exports.register = (req, res) => {
             .send('Password is required and should be at least 6 characters long');
     
     if (!secret) return res.status(400).send('Answer is required');
+    const exist = User;
 };
