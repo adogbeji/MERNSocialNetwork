@@ -17,5 +17,6 @@ exports.register = (req, res) => {
             .send('Password is required and should be at least 6 characters long');
     
     if (!secret) return res.status(400).send('Answer is required');
-    const exist = User;
+    const exist = User.findOne({email});
+    if (exist) return res.status(400).send('Email is taken');
 };
